@@ -1,19 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/27 15:21:06 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/04/28 12:08:17 by hbaddrul         ###   ########.fr       */
+/*   Created: 2021/04/28 11:24:44 by hbaddrul          #+#    #+#             */
+/*   Updated: 2021/04/28 11:26:14 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-
-#endif
+int		ft_isdigit(int c)
+{
+	return(c >= '0' && c <= '9');
+}
