@@ -1,25 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/27 15:21:06 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/04/28 14:21:28 by hbaddrul         ###   ########.fr       */
+/*   Created: 2021/04/28 14:09:31 by hbaddrul          #+#    #+#             */
+/*   Updated: 2021/04/28 15:44:37 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+int	ft_isdigit(int c);
 
-int		ft_atoi(const char *str);
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
+static int	ft_isspace(int c)
+{
+	return ((c >= 9 && c <= 13) || c == 32);
+}
 
-#endif
+int	ft_atoi(const char *str)
+{
+	int	ret;
+	int	sign;
+
+	ret = 0;
+	sign = 1;
+	while (ft_isspace(*str))
+		++str;
+	if (*str == '+' || *str == '-')
+		if (*(str++) == '-')
+			sign *= -1;
+	while (ft_isdigit(*str))
+	{
+		ret *= 10;
+		ret += *(str++) - '0';
+	}
+	return (sign * ret);
+}
