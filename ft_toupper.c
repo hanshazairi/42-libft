@@ -6,11 +6,14 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/28 13:38:54 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/04/28 13:45:26 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/04/28 16:50:08 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_toupper(int c)
+int	ft_toupper(int c)
 {
-	return ((c >= 'a' && c <= 'z') ? c -= 32 : c);
+	if (c >= 'a' && c <= 'z')
+		return (c -= 32);
+	else
+		return (c);
 }
