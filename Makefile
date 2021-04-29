@@ -1,5 +1,5 @@
 NAME = libft.a
-SOURCES = $(filter-out main.c, $(wildcard *.c))
+SOURCES = $(wildcard *.c)
 OBJECTS = $(SOURCES:.c=.o)
 
 all: $(NAME)
