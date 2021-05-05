@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/03 15:10:30 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/03 17:48:49 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/05/05 21:41:10 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,20 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	tmp[len];
+	void	*ret;
 
-	ft_memcpy(tmp, src, len);
-	ft_memcpy(dst, tmp, len);
-	return (dst);
+	if (!dst && !src)
+		return (0);
+	ret = dst;
+	if (src < dst)
+	{
+		src += len;
+		dst += len;
+		while (len--)
+			*(char *)--dst = *(char *)--src;
+	}
+	else
+		while (len--)
+			*(char *)dst++ = *(char *)src++;
+	return (ret);
 }

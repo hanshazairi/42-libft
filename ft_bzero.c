@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/03 13:48:36 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/03 13:59:16 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/05/05 21:18:16 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	while (n--)
-		*(char *)s++ = 0;
+	ft_memset(s, 0, n);
 }
