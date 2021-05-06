@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/29 15:25:59 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/04/29 16:23:10 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/05/06 14:16:10 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,8 @@ char	*ft_strrchr(const char *s, int c)
 			ret = (char *)s;
 		++s;
 	}
-	return (ret);
+	if (c == 0)
+		return ((char *)s);
+	else
+		return (ret);
 }
