@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/29 14:59:22 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/04/29 15:08:12 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/05/07 12:19:44 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		++i;
 		++dst;
 	}
-	while (*src && i < dstsize - 1)
+	while (*src && i + 1 < dstsize)
 	{
 		*dst++ = *src++;
 		++i;
