@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 17:02:38 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/09 04:24:29 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/05/09 05:49:02 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ char	**ft_split(const char *s, char c)
 	size_t	i;
 	size_t	len;
 
+	if (!s)
+		return (0);
 	i = 0;
 	ret = malloc(sizeof(char *) * scount(s, c) + 1);
 	if (!ret)
