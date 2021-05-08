@@ -6,18 +6,18 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:03:01 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/08 00:46:26 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/05/09 01:17:26 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	get_numlen(int n)
+static int	nlen(int n)
 {
 	if (n == 0)
 		return (0);
 	else
-		return (1 + get_numlen(n / 10));
+		return (1 + nlen(n / 10));
 }
 
 char	*ft_itoa(int n)
@@ -25,7 +25,7 @@ char	*ft_itoa(int n)
 	int		len;
 	char	*ret;
 
-	len = 1 + get_numlen(n / 10);
+	len = 1 + nlen(n / 10);
 	if (n < 0)
 		++len;
 	ret = malloc(len + 1);
