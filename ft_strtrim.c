@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 15:58:24 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/09 05:33:49 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/05/09 05:46:47 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ char	*ft_strtrim(const char *s1, const char *set)
 	char	*start;
 	char	*end;
 
+	if (!s1 || !set)
+		return (0);
 	start = (char *)s1;
 	end = start + ft_strlen(s1);
 	while (*start && isset(*start, set))
