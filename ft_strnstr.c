@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/29 20:23:35 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/07 13:58:53 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/05/09 05:23:05 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	needle_len;
 	char	*haystack_tmp;
 	char	*needle_tmp;
+	size_t	needle_len;
 
 	needle_len = ft_strlen(needle);
 	if (!needle_len)
