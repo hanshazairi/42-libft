@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/08 00:52:33 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/09 05:41:53 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/05/09 15:00:57 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (!s || fd < 0)
+	if (!s)
 		return ;
 	write(fd, s, ft_strlen(s));
 }

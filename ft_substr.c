@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 15:29:09 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/09 05:38:39 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/05/09 15:07:28 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*ret;
 
-	if (!s || ft_strlen(s) < start || !len)
+	if (!s)
+		return (0);
+	if (ft_strlen(s) < start || !len)
 		return (ft_strdup(""));
 	ret = ft_strndup(s + start, len);
 	return (ret);
