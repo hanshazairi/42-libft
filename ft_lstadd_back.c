@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/08 01:28:56 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/08 01:31:04 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/05/09 15:23:13 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,9 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*tmp;
 
-	if (!*lst)
+	tmp = ft_lstlast(*lst);
+	if (!tmp)
 		*lst = new;
 	else
-	{
-		tmp = *lst;
-		while (tmp->next)
-			tmp = tmp->next;
 		tmp->next = new;
-	}
 }
