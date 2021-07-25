@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/29 20:23:35 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/09 05:23:05 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/25 20:32:00 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,24 +16,23 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	char	*haystack_tmp;
 	char	*needle_tmp;
-	size_t	needle_len;
+	size_t	i;
 
-	needle_len = ft_strlen(needle);
-	if (!needle_len)
+	if (!ft_strlen(needle))
 		return ((char *)haystack);
-	if (!ft_strlen(haystack) || len < needle_len)
+	if (!ft_strlen(haystack) || len < ft_strlen(needle))
 		return (0);
-	len = len - needle_len + 1;
-	while (len-- && *haystack)
+	i = len - ft_strlen(needle) + 1;
+	while (i-- && *haystack)
 	{
 		haystack_tmp = (char *)haystack;
 		needle_tmp = (char *)needle;
-		while (*haystack_tmp == *needle_tmp && *needle_tmp)
+		while (*needle_tmp && *needle_tmp == *haystack_tmp)
 		{
 			++haystack_tmp;
 			++needle_tmp;
 		}
-		if (*needle_tmp == 0)
+		if (!*needle_tmp)
 			return ((char *)haystack);
 		++haystack;
 	}
