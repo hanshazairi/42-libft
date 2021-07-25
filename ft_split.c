@@ -6,45 +6,29 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 17:02:38 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/09 05:49:02 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/26 00:20:01 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	scount(const char *s, char c)
+static size_t	ft_toklen(const char *s, char c)
 {
-	size_t	count;
+	size_t	len;
 
-	count = 0;
+	len = 0;
 	while (*s)
 	{
 		if (*s != c)
 		{
-			++count;
+			++len;
 			while (*s && *s != c)
 				++s;
 		}
 		else
 			++s;
 	}
-	return (count);
-}
-
-static char	*ft_strndup(const char *s1, size_t n)
-{
-	char	*ret;
-	size_t	len;
-
-	if (n < ft_strlen(s1))
-		len = n;
-	else
-		len = ft_strlen(s1);
-	ret = malloc(len + 1);
-	if (!ret)
-		return (0);
-	ft_strlcpy(ret, s1, len + 1);
-	return (ret);
+	return (len);
 }
 
 char	**ft_split(const char *s, char c)
@@ -56,7 +40,7 @@ char	**ft_split(const char *s, char c)
 	if (!s)
 		return (0);
 	i = 0;
-	ret = malloc(sizeof(char *) * scount(s, c) + 1);
+	ret = malloc(sizeof(char *) * ft_toklen(s, c) + 1);
 	if (!ret)
 		return (0);
 	while (*s)
@@ -66,7 +50,7 @@ char	**ft_split(const char *s, char c)
 			len = 0;
 			while (*s && *s != c && ++len)
 				++s;
-			ret[i++] = ft_strndup(s - len, len);
+			ret[i++] = ft_substr(s - len, 0, len);
 		}
 		else
 			++s;
