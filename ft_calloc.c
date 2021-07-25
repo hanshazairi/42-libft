@@ -6,11 +6,13 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/03 19:01:12 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/05 01:17:45 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/26 00:58:07 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+
+void	ft_bzero(void *s, size_t n);
 
 void	*ft_calloc(size_t count, size_t size)
 {

@@ -6,11 +6,13 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 17:02:38 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/26 00:20:01 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/26 01:07:28 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+
+char	*ft_substr(const char *s, unsigned int start, size_t len);
 
 static size_t	ft_toklen(const char *s, char c)
 {

@@ -6,11 +6,14 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/03 19:06:40 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/09 01:58:34 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/26 01:08:09 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+
+size_t	ft_strlen(const char *s);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 
 char	*ft_strdup(const char *s1)
 {

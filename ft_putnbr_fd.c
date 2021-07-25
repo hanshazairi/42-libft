@@ -6,11 +6,11 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/08 00:57:40 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/09 01:46:58 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/26 01:06:07 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+void	ft_putchar_fd(char c, int fd);
 
 void	ft_putnbr_fd(int n, int fd)
 {

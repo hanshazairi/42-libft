@@ -6,11 +6,13 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:58:53 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/09 05:51:25 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/26 01:10:49 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+
+size_t	ft_strlen(const char *s);
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {

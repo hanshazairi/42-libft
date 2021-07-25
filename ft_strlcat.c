@@ -6,11 +6,13 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/29 14:59:22 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/25 19:07:04 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/26 01:09:43 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
+
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

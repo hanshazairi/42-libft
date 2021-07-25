@@ -6,11 +6,11 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:03:01 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/09 01:17:26 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/26 00:59:08 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 static int	nlen(int n)
 {

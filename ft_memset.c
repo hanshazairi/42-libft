@@ -6,11 +6,11 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/03 11:53:31 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/05 21:16:00 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/26 01:04:12 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {

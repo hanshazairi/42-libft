@@ -6,11 +6,13 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/08 00:52:33 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/05/09 15:00:57 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/26 01:06:52 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+
+size_t	ft_strlen(const char *s);
 
 void	ft_putstr_fd(char *s, int fd)
 {

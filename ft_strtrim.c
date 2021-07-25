@@ -6,11 +6,14 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 15:58:24 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/26 00:01:07 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/26 01:12:46 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
+
+size_t	ft_strlen(const char *s);
+char	*ft_substr(const char *s, unsigned int start, size_t len);
 
 static int	ft_isset(char c, const char *set)
 {
