@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:03:01 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/27 15:18:50 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/28 00:50:53 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 static int	ft_numlen(int n)
 {
-	if (n == 0)
-		return (0);
-	else
-		return (1 + ft_numlen(n / 10));
+	if (n / 10 == 0)
+		return (1);
+	return (1 + ft_numlen(n / 10));
 }
 
 char	*ft_itoa(int n)
@@ -25,7 +24,7 @@ char	*ft_itoa(int n)
 	int		len;
 	char	*ret;
 
-	len = 1 + ft_numlen(n / 10);
+	len = ft_numlen(n);
 	if (n < 0)
 		++len;
 	ret = malloc(len + 1);
