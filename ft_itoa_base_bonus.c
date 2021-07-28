@@ -6,20 +6,20 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/28 00:55:35 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/28 01:30:16 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/28 20:53:58 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-static int	ft_numlen(int n, int base)
+static int	ft_numlen(long long n, int base)
 {
 	if (n / base == 0)
 		return (1);
 	return (1 + ft_numlen(n / base, base));
 }
 
-char	*ft_itoa_base(int n, int base)
+char	*ft_itoa_base(long long n, int base)
 {
 	int		len;
 	char	*digits;
