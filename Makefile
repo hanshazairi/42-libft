@@ -3,26 +3,23 @@ SOURCES = $(filter-out $(BSOURCES), $(wildcard *.c))
 BSOURCES = $(wildcard *lst*.c)
 OBJECTS = $(SOURCES:.c=.o)
 BOBJECTS = $(BSOURCES:.c=.o)
-GCC = gcc -c -Wall -Wextra -Werror
-AR = ar rc
-RM = rm -f
 
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	$(AR) $@ $?
+	ar rc $@ $?
 
 bonus: $(OBJECTS) $(BOBJECTS)
-	$(AR) $(NAME) $?
+	ar rc $(NAME) $?
 
 %.o: %.c
-	$(GCC) $?
+	gcc -c -Wall -Wextra -Werror $?
 
 clean:
-	$(RM) $(OBJECTS) $(BOBJECTS)
+	rm -f $(OBJECTS) $(BOBJECTS)
 
 fclean: clean
-	$(RM) $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
