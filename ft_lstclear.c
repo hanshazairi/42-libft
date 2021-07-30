@@ -6,17 +6,11 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/08 01:37:14 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/26 01:28:27 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/30 16:29:18 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}	t_list;
-
-void	ft_lstdelone(t_list *lst, void (*del)(void *));
+#include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

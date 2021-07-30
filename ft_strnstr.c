@@ -6,13 +6,12 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/29 20:23:35 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/26 01:11:40 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/30 16:31:14 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-
-size_t	ft_strlen(const char *s);
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

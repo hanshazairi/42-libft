@@ -6,11 +6,11 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/29 14:31:51 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/29 14:56:43 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/30 16:31:25 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c);
+#include "libft.h"
 
 char	*ft_strupr(char *str)
 {

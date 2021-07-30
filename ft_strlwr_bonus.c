@@ -6,11 +6,11 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/29 14:58:10 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/29 14:58:36 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/30 16:31:03 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int c);
+#include "libft.h"
 
 char	*ft_strlwr(char *str)
 {

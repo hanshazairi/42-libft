@@ -6,13 +6,12 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/28 14:09:31 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/26 00:56:47 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/30 16:27:33 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <limits.h>
-
-int	ft_isdigit(int c);
+#include "libft.h"
 
 static int	ft_isspace(int c)
 {
