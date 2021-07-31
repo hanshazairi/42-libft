@@ -1,36 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_base_bonus.c                               :+:      :+:    :+:   */
+/*   ft_putnbr_base_fd_bonus.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/28 00:55:35 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/08/01 01:29:35 by hbaddrul         ###   ########.fr       */
+/*   Created: 2021/07/31 21:21:18 by hbaddrul          #+#    #+#             */
+/*   Updated: 2021/08/01 01:19:10 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_itoa_base(unsigned long long n, int base)
+void	ft_putnbr_base_fd(unsigned long long n, int base, int fd)
 {
-	int		len;
-	char	*digits;
-	char	*ret;
+	const char	*digits = "0123456789abcdef";
 
-	digits = "0123456789abcdef";
-	len = ft_numlen(n, base);
-	ret = malloc(len + 1);
-	if (!ret)
-		return (0);
-	ret[len] = 0;
-	if (n == 0)
-		ret[0] = '0';
-	while (n)
-	{
-		ret[--len] = digits[n % base];
-		n /= base;
-	}
-	return (ret);
+	if (n / base)
+		ft_putnbr_base_fd(n / base, base, fd);
+	ft_putchar_fd(digits[n % base], fd);
 }
