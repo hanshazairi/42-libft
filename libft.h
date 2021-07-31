@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/27 15:21:06 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/29 18:44:15 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/07/31 16:12:26 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 char	*ft_strupr(char *str);
 char	*ft_strlwr(char *str);
 char	*ft_itoa_base(unsigned long long n, int base);
+void	ft_putstrn_fd(char *s, int n, int fd);
 
 #endif
