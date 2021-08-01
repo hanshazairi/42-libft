@@ -6,13 +6,14 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/27 15:21:06 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/08/01 17:16:46 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/08/01 21:47:54 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdbool.h>
 # include <stddef.h>
 
 typedef struct s_list
@@ -67,7 +68,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 char	*ft_strupr(char *str);
 char	*ft_strlwr(char *str);
-int		ft_numlen(int n, int base);
+int		ft_numlen(int n, int base, bool abs);
 int		ft_unumlen(unsigned long long n, int base);
 char	*ft_itoa_base(unsigned long long n, int base);
 void	ft_putstrn_fd(char *s, int n, int fd);
