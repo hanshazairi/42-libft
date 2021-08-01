@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/28 00:55:35 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/08/01 01:29:35 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/08/01 17:12:23 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_itoa_base(unsigned long long n, int base)
 	char	*ret;
 
 	digits = "0123456789abcdef";
-	len = ft_numlen(n, base);
+	len = ft_unumlen(n, base);
 	ret = malloc(len + 1);
 	if (!ret)
 		return (0);
