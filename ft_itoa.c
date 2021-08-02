@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:03:01 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/08/03 02:20:26 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/08/03 02:31:55 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_itoa(int n)
 		if (n > 0)
 			ret[--len] = digits[n % 10];
 		else
-			ret[--len] = digits[-n % 10];
+			ret[--len] = digits[n % 10 * -1];
 		n /= 10;
 	}
 	return (ret);

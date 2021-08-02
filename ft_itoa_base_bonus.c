@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/28 00:55:35 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/08/03 02:20:18 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/08/03 02:32:52 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_itoa_base(int n, int base)
 		if (n > 0)
 			ret[--len] = digits[n % base];
 		else
-			ret[--len] = digits[-n % base];
+			ret[--len] = digits[-n % base * -1];
 		n /= base;
 	}
 	return (ret);
