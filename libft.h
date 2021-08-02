@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/27 15:21:06 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/08/02 03:19:22 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/08/03 02:23:33 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,11 +66,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-char	*ft_strupr(char *str);
-char	*ft_strlwr(char *str);
-int		ft_numlen(int n, int base, bool abs);
-int		ft_unumlen(unsigned long long n, int base);
-char	*ft_itoa_base(unsigned long long n, int base);
-void	ft_putnbr_base_fd(unsigned long long n, int base, int fd);
+int		ft_numlen(int n, int base);
+char	*ft_itoa_base(int n, int base);
 
 #endif
