@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 17:02:38 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/30 16:30:29 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/08/27 17:37:26 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	**ft_split(const char *s, char c)
 	if (!s)
 		return (0);
 	i = 0;
-	ret = malloc(sizeof(char *) * ft_toklen(s, c) + 1);
+	ret = malloc(sizeof(char *) * (ft_toklen(s, c) + 1));
 	if (!ret)
 		return (0);
 	while (*s)
