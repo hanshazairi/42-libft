@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/03 19:01:12 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/30 16:27:50 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/11/23 12:29:46 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ret;
 
-	ret = malloc(count * size);
+	ret = malloc(size * count);
 	if (!ret)
 		return (0);
-	ft_bzero(ret, count * size);
+	ft_bzero(ret, size * count);
 	return (ret);
 }

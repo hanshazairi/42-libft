@@ -6,13 +6,13 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/28 15:45:40 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/09/28 15:46:24 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/11/23 12:39:35 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_abs(int num)
+int	ft_abs(int i)
 {
-	if (num < 0)
-		return (-num);
-	return (num);
+	if (i < 0)
+		return (-i);
+	return (i);
 }

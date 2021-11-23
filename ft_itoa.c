@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:03:01 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/08/03 02:31:55 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:24:19 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_itoa(int n)
 	const char	*digits = "0123456789";
 
 	len = ft_numlen(n, 10);
-	ret = malloc(len + 1);
+	ret = malloc(sizeof(char) * (len + 1));
 	if (!ret)
 		return (0);
 	ret[len] = 0;

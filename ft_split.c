@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 17:02:38 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/08/27 17:37:26 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:30:08 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,21 @@
 
 static size_t	ft_toklen(const char *s, char c)
 {
-	size_t	len;
+	size_t	ret;
 
-	len = 0;
+	ret = 0;
 	while (*s)
 	{
 		if (*s != c)
 		{
-			++len;
+			++ret;
 			while (*s && *s != c)
 				++s;
 		}
 		else
 			++s;
 	}
-	return (len);
+	return (ret);
 }
 
 char	**ft_split(const char *s, char c)

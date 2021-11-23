@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:58:53 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/07/30 16:31:08 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:37:54 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 
 	if (!s)
 		return (0);
-	ret = malloc(ft_strlen(s) + 1);
+	ret = malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!ret)
 		return (0);
 	i = 0;
