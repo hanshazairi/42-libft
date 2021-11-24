@@ -1,6 +1,7 @@
 # 42cursus - Libft
 
 ![](https://github.com/hanshazairi/42-libft/workflows/norminette/badge.svg)
+![](https://github.com/hanshazairi/42-libft/workflows/build/badge.svg)
 ![](https://img.shields.io/tokei/lines/github/hanshazairi/42-libft?style=plastic?color=blue)
 
 ## About
